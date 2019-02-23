@@ -1,6 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<input type="text" name="serch_element"  #serch_element (change)="getsdata(serch_element.value)">
+<input type="text" name="serch_element" #serch_element (change)="getsdata(serch_element.value)">
 
 
-
-
+<table border="1">
+  <tr>
+    <td>NAme</td>
+  </tr>
+  <tr *ngFor="let fsdfsd of fsdfsd">
+    <td>{{fsdfsd.name}}</td>
+  </tr>
+</table>

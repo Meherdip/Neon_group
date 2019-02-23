@@ -8,13 +8,14 @@ import { EmplService } from './empl.service'
 export class AppComponent {
   constructor(private dtas:EmplService){}
 
-
+fsdfsd
   title = 'Meherdip_neaon Changes 1';
   serch_element:Text;
   getsdata(serch_element){
     console.log(serch_element)
     this.dtas.dataapi(serch_element).subscribe(res=>{
-      console.log(res)
+      this.fsdfsd=res
+      console.log(this.fsdfsd)
     })
   }
 }
